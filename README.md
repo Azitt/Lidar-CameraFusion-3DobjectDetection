@@ -1,1 +1,1 @@
-This repository uses the KITTI dataset to implement and compare LiDAR-camera early and late fusion approaches for 3D object detection.
+This repository compares two Lidar-camera fusion strategies - early fusion and late fusion - for 3D object detection - through a code implementation using the KITTI dataset, the [PV-RCNN++](https://arxiv.org/pdf/2102.00463) (lidar 3d object detection model) and Yolov8(camera 2d object detection model) to evaluate each approach.
