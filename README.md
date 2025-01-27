@@ -50,7 +50,8 @@ This repository compares two Lidar-camera fusion strategies - early fusion a
 
 4- LiDAR points exist for trucks, but since the KITTI 3D object detection dataset doesn't label them, late fusion misses these trucks while early fusion detects them.
 
-· 3D Box Precision:
+**3D Box Precision**:
+
 Purple 3D boxes in early fusion can be less accurate than those in late fusion because they rely on estimated LiDAR depth and calibration, which is challenging to get precisely right.
 
 
