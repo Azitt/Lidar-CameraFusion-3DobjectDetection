@@ -38,3 +38,4 @@ Python 3.8+
 PyTorch
 CUDA support
 KITTI dataset
+## Installation
