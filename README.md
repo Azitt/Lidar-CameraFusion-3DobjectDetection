@@ -32,13 +32,20 @@ This repository compares two Lidar-camera fusion strategies - early fusion a
 - Uses PV-RCNN++ to get 3D detections from LiDAR
 - Combines detections using IoU matching and confidence scores
 
+
+
 ## Requirements
 
 Python 3.8+
 PyTorch
 CUDA support
 KITTI dataset
+[Yolov8 pretrained weights]()
+
 ## Installation
 git clone [repo-url]
 cd [repo-name]
 pip install -r requirements.txt
+
+# Demo
+python main.py
