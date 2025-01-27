@@ -83,4 +83,10 @@ pip install -r requirements.txt
 ## Demo
 python main.py
 
+## Acknowledgments
+
+This repository includes Lidar 3D object detection code adapted from [OpenPCDet](https://github.com/open-mmlab/OpenPCDet), an open-source project for LiDAR-based 3D perception.
+
+We appreciate the efforts of the OpenPCDet contributors for providing a robust foundation for LiDAR-based 3D object detection.
+
 
