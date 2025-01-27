@@ -31,7 +31,6 @@ print("Visible CUDA devices:")
 for i in range(torch.cuda.device_count()):
     print(f"Device {i}: {torch.cuda.get_device_name(i)}")
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1,2"
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 def main():

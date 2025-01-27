@@ -39,3 +39,6 @@ PyTorch
 CUDA support
 KITTI dataset
 ## Installation
+git clone [repo-url]
+cd [repo-name]
+pip install -r requirements.txt
