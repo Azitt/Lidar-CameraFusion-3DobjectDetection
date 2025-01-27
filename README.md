@@ -19,15 +19,15 @@ This repository compares two Lidar-camera fusion strategies - early fusion a
 </div>
 
 ## Understanding Fusion Approaches
-Early Fusion
+**Early Fusion**
 - Early fusion combines raw or low-level features from different sensors at the beginning of the detection pipeline. In our implementation, we:
 - Start with 2D object detection (Yolov8) from camera images
-Project LiDAR points into the image plane
-Associate LiDAR points with 2D detections
-Use these points to estimate 3D properties like position, dimensions, and orientation
+- Project LiDAR points into the image plane
+- Associate LiDAR points with 2D detections
+- Use these points to estimate 3D properties like position, dimensions, and orientation
 
-Late Fusion
-Late fusion keeps sensor processing streams separate and combines their high-level outputs. Our implementation:
-Processes camera images to get 2D detections (Yolov8)
-Uses PV-RCNN++ to get 3D detections from LiDAR
-Combines detections using IoU matching and confidence scores
+**Late Fusion**
+- Late fusion keeps sensor processing streams separate and combines their high-level outputs. Our implementation:
+- Processes camera images to get 2D detections (Yolov8)
+- Uses PV-RCNN++ to get 3D detections from LiDAR
+- Combines detections using IoU matching and confidence scores
