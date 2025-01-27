@@ -156,7 +156,6 @@ def estimate_dimensions(points, rotation):
     w = np.percentile(points_rotated[:, 1], 95) - np.percentile(points_rotated[:, 1], 5)
     h = np.percentile(points_rotated[:, 2], 95) - np.min(points_rotated[:, 2])
     
-    # Clip to reasonable ranges
     l = np.clip(l, 3.5, 5.0)
     w = np.clip(w, 1.6, 2.0)
     h = np.clip(h, 1.4, 1.8)
