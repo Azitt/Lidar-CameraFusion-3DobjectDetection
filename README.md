@@ -39,16 +39,25 @@ For detailed analysis, check our Medium article.
 ## Requirements
 
 Python 3.8+
+
 PyTorch
+
 CUDA support
+
 [KITTI dataset](https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d)
+
 [Yolov8 pretrained weights](https://github.com/ultralytics/ultralytics/blob/main/docs/en/models/yolov8.md) I didn’t notice any accuracy difference between YOLOv8 and YOLOv11. I used v8, but feel free to use v11 if it’s easier to find documentation or pretrained weights for it.
+
 [PV-RCNN++](https://github.com/open-mmlab/OpenPCDet/tree/master?tab=readme-ov-file)
 
 ## Installation
-git clone [repo-url]
+
+git clone [Lidar-CameraFusion-3DobjectDetection.git](https://github.com/Azitt/Lidar-CameraFusion-3DobjectDetection)
+
 cd [repo-name]
+
 pip install -r requirements.txt
+
 
 ## Demo
 python main.py
