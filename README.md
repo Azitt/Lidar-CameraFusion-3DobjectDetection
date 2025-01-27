@@ -1,4 +1,4 @@
-This repository compares two Lidar-camera fusion strategies - early fusion and late fusion - for 3D object detection - through a code implementation using the KITTI dataset, the [PV-RCNN++](https://arxiv.org/pdf/2102.00463) (lidar 3d object detection model) and [Yolov8](https://docs.ultralytics.com/models/yolov8/) (camera 2d object detection model) to evaluate each approach.
+This repository compares two Lidar-camera fusion strategies - early fusion and late fusion - for 3D object detection - through a code implementation using the [KITTI dataset](https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d), the [PV-RCNN++](https://arxiv.org/pdf/2102.00463) (lidar 3d object detection model) and [Yolov8](https://docs.ultralytics.com/models/yolov8/) (camera 2d object detection model) to evaluate each approach.
 
 ## Inference Results: Early vs Late Fusion
 
@@ -31,3 +31,10 @@ This repository compares two Lidar-camera fusion strategies - early fusion a
 - Processes camera images to get 2D detections (Yolov8)
 - Uses PV-RCNN++ to get 3D detections from LiDAR
 - Combines detections using IoU matching and confidence scores
+
+## Requirements
+
+Python 3.8+
+PyTorch
+CUDA support
+KITTI dataset
