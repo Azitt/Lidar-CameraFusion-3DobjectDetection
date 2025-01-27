@@ -32,7 +32,26 @@ This repository compares two Lidar-camera fusion strategies - early fusion a
 - Uses PV-RCNN++ to get 3D detections from LiDAR
 - Combines detections using IoU matching and confidence scores
 
+# Visual Comparison of Results
 
+<div align="center">
+  <strong style="display: inline-block; margin: 0 20px;">Early vs Late Fusion – 3D Object Detection Results</strong> 
+</div>
+
+<div align="center"> 
+  <img src="./resources/result_comparison.png" alt="Bottom Left Video" width="600"/> 
+</div>
+
+1- By processing LiDAR independently, late fusion can detect objects beyond the camera's range. For example, a small bike might be picked up by LiDAR but missed by the camera, so early fusion overlooks it.
+
+2- If the camera fails to detect distant vehicles, early fusion doesn't create 3D boxes for them even though LiDAR points are available. In contrast, late fusion successfully detecting and boxing these distant vehicles (shown with orange boxes).
+
+3- In both early and late fusion, we still rely on 2D detections for small or distant objects - like traffic lights - since LiDAR data for them is often sparse.
+
+4- LiDAR points exist for trucks, but since the KITTI 3D object detection dataset doesn't label them, late fusion misses these trucks while early fusion detects them.
+
+· 3D Box Precision:
+Purple 3D boxes in early fusion can be less accurate than those in late fusion because they rely on estimated LiDAR depth and calibration, which is challenging to get precisely right.
 
 
 For detailed analysis, check our Medium article.
@@ -52,9 +71,9 @@ CUDA support
 
 ## Installation
 
-git clone [Lidar-CameraFusion-3DobjectDetection.git](https://github.com/Azitt/Lidar-CameraFusion-3DobjectDetection)
+git clone [Lidar-CameraFusion-3DobjectDetection](https://github.com/Azitt/Lidar-CameraFusion-3DobjectDetection)
 
-cd [repo-name]
+cd Lidar-CameraFusion-3DobjectDetection
 
 pip install -r requirements.txt
 
@@ -62,4 +81,4 @@ pip install -r requirements.txt
 ## Demo
 python main.py
 
-## hello world
+
