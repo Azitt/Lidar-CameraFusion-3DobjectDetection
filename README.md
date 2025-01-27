@@ -34,13 +34,15 @@ This repository compares two Lidar-camera fusion strategies - early fusion a
 
 
 
+
+For detailed analysis, check our Medium article.
 ## Requirements
 
 Python 3.8+
 PyTorch
 CUDA support
-KITTI dataset
-[Yolov8 pretrained weights]()
+[KITTI dataset](https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d)
+[Yolov8 pretrained weights](https://github.com/ultralytics/ultralytics/blob/main/docs/en/models/yolov8.md) I didn’t notice any accuracy difference between YOLOv8 and YOLOv11. I used v8, but feel free to use v11 if it’s easier to find documentation or pretrained weights for it.
 
 ## Installation
 git clone [repo-url]
